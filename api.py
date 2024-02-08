@@ -12,7 +12,7 @@ def hello():
 
 @app.route("/plus/<num1>/<num2>")
 def plus(num1,num2):
-    return {"result":(int(num1)+int(num2))}
+    return {"result":(float(num1)+float(num2))}
 
 if __name__ == '__main__':
       app.run(port=5000)
